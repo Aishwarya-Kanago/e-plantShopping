@@ -107,7 +107,11 @@ body {
     margin-top: 10px;
 }
 
-.product-button:hover {
+.product-button:disabled{
+    background-color: gray;
+}
+
+.product-button:not(:disabled):hover {
     background-color: #c0392b;
 }
 
@@ -211,7 +215,7 @@ body {
     cursor: pointer;
   }
   
-  .product-button:hover {
+  .product-button:not(:disabled):hover {
     background-color: #45a049;
   }
   
